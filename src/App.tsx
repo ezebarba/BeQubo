@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import Obras from './pages/Obras';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
-import Terrenos from './pages/Terrenos';
 import TrabajaConNosotros from './pages/TrabajaConNosotros';
 
 const App = () => {
@@ -17,7 +16,6 @@ const App = () => {
         <Route path="/obras" element={<Obras />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/contacto" element={<Contacto />} />
-        <Route path="/terrenos" element={<Terrenos />} />
         <Route path="/trabaja-con-nosotros" element={<TrabajaConNosotros />} />
       </Routes>
       <Footer />
