@@ -2,6 +2,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../images/logo.png';
+
 
 const Header = () => {
   const location = useLocation();
@@ -24,7 +26,11 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="text-3xl font-bold text-blue-600">BeQubo</Link>
+        <Link to="/">
+        
+        <img src={logo} alt="BeQubo" className="h-12 w-auto" />
+        
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex space-x-6 text-gray-700 font-medium text-lg">
