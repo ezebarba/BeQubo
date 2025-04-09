@@ -6,10 +6,12 @@ import Obras from './pages/Obras';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
 import TrabajaConNosotros from './pages/TrabajaConNosotros';
+import TitleUpdater from './components/TitleUpdater'; // 👈
 
 const App = () => {
   return (
     <Router>
+      <TitleUpdater /> {/* 👈 Aca se actualiza el título dinámicamente */}
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

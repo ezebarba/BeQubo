@@ -1,39 +1,19 @@
-// components/Footer.tsx
-import { Link } from "react-router-dom";
+// src/components/Footer.tsx
+import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-6 mt-12">
-      <div className="container mx-auto px-4 grid md:grid-cols-3 gap-4 text-center md:text-left">
-        <div>
-          <h4 className="font-bold mb-2">BeQubo</h4>
-          <p>Desarrollando viviendas de calidad</p>
+    <footer className="bg-gray-900 text-white py-6">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+        <p className="text-sm mb-4 md:mb-0">&copy; {new Date().getFullYear()} BeQubo. Todos los derechos reservados.</p>
+        <div className="flex gap-4">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
+            <FaInstagram size={20} />
+          </a>
+          <a href="https://wa.me/541112345678" target="_blank" rel="noopener noreferrer" className="hover:text-green-500">
+            <FaWhatsapp size={20} />
+          </a>
         </div>
-        <div>
-          <h4 className="font-bold mb-2">Navegación</h4>
-          <ul className="space-y-1">
-            <li><Link to="/" className="hover:underline">Inicio</Link></li>
-            <li><Link to="/obras" className="hover:underline">Obras</Link></li>
-            <li><Link to="/nosotros" className="hover:underline">Nosotros</Link></li>
-            <li><Link to="/contacto" className="hover:underline">Contacto</Link></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-bold mb-2">Contacto</h4>
-          <p>contacto@BeQubo.com.ar</p>
-          <p>(011) 9999-9999</p>
-          <div className="mt-2 flex justify-center md:justify-start gap-2">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <img src="/icons/facebook.svg" alt="Facebook" className="h-6" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src="/icons/instagram.svg" alt="Instagram" className="h-6" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="text-center mt-6 text-sm text-gray-400">
-        © {new Date().getFullYear()} BeQubo. Todos los derechos reservados.
       </div>
     </footer>
   );
