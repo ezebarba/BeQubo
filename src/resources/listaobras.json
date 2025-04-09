@@ -1,0 +1,122 @@
+[
+    {
+        "id": 12,
+        "name": "SAN MARTIN 861",
+        "state": true,
+        "location": "Gral. José de San Martín 861, B1708IHQ Morón, Provincia de Buenos Aires",
+        "municipalityName": "Morón",
+        "orden": 110,
+        "images": [
+            {
+                "id": "959a2334-e5a7-464b-8bb1-cb51b6ce261f",
+                "url": "https://clamaco-images.s3.amazonaws.com/d2fef4d3-d50e-48f5-9467-1f4de33d5d36",
+                "constructionId": 12
+            },
+            {
+                "id": "b5b09e40-ab7b-4240-a94c-b1c75ba85573",
+                "url": "https://clamaco-images.s3.amazonaws.com/44e1acea-dd8f-4252-8460-131ba54d52d8",
+                "constructionId": 12
+            },
+            {
+                "id": "d2956c09-8e44-4c21-85fe-532f6ed66043",
+                "url": "https://clamaco-images.s3.amazonaws.com/df4558aa-3507-41eb-86c2-70cc5b7c0c2e",
+                "constructionId": 12
+            },
+            {
+                "id": "88c60c1e-1118-4d42-a8df-33f0f945c052",
+                "url": "https://clamaco-images.s3.amazonaws.com/5d8a4d26-82a2-40ea-9510-4ffddec616d8",
+                "constructionId": 12
+            },
+            {
+                "id": "64676d9c-0aa9-40cc-97dc-ff6d1c966628",
+                "url": "https://clamaco-images.s3.amazonaws.com/81a43ad0-fd8a-4339-b60b-11b2106b4d33",
+                "constructionId": 12
+            },
+            {
+                "id": "bde15296-752e-4f7a-a09b-add332448764",
+                "url": "https://clamaco-images.s3.amazonaws.com/a241acfd-e4e1-45a9-8ca3-c9a19eab94b9",
+                "constructionId": 12
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "9 DE JULIO 659",
+        "state": true,
+        "location": "9 de Julio 659, B1708 Morón, Provincia de Buenos Aires",
+        "municipalityName": "Morón",
+        "orden": 150,
+        "images": [
+            {
+                "id": "bfaea409-4e9b-4373-ba62-242766ba5d88",
+                "url": "https://clamaco-images.s3.amazonaws.com/ac7cadbd-bbac-4f9a-9112-8a2c4b6afbc9",
+                "constructionId": 16
+            },
+            {
+                "id": "334e766a-82a5-4b33-872d-f23686bc47f1",
+                "url": "https://clamaco-images.s3.amazonaws.com/12371c9e-1fd0-44b6-8589-746143001ba2",
+                "constructionId": 16
+            },
+            {
+                "id": "0e90f76a-4706-43c5-949c-fa8dda0f29d1",
+                "url": "https://clamaco-images.s3.amazonaws.com/21ad9f3e-3567-4fd2-abf3-570557ef279d",
+                "constructionId": 16
+            },
+            {
+                "id": "df5c10e9-5f66-4f41-a4fb-6ea38f2e5f8e",
+                "url": "https://clamaco-images.s3.amazonaws.com/adab786f-bca2-4b2a-b492-4b19434aaf69",
+                "constructionId": 16
+            },
+            {
+                "id": "61fb4a52-4acf-451c-a898-479f18888147",
+                "url": "https://clamaco-images.s3.amazonaws.com/98bc71b2-45c6-4e0f-ad91-74b6562d2b5d",
+                "constructionId": 16
+            },
+            {
+                "id": "de996655-882e-4e4d-b8b3-bd525e31f039",
+                "url": "https://clamaco-images.s3.amazonaws.com/efbe5582-49f7-4361-87bd-446f905c2d30",
+                "constructionId": 16
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "GRANT 186",
+        "state": true,
+        "location": "Int. Ernesto Grant 186, B1708JMD Morón, Provincia de Buenos Aires",
+        "municipalityName": "Morón",
+        "orden": 170,
+        "images": [
+            {
+                "id": "a2e3d52f-11a6-47b9-9a65-028437272b46",
+                "url": "https://clamaco-images.s3.amazonaws.com/5d0c1b52-9fc8-447c-9956-fae69c0ca7af",
+                "constructionId": 18
+            },
+            {
+                "id": "9caa2122-ac68-4d63-8129-3ceeb56b8412",
+                "url": "https://clamaco-images.s3.amazonaws.com/0cafa369-7511-4619-9abd-70d8f3f3577e",
+                "constructionId": 18
+            },
+            {
+                "id": "acabc2dd-3894-4a95-bbb8-08058e7bd345",
+                "url": "https://clamaco-images.s3.amazonaws.com/32e1f46c-9667-4205-97b4-560e380f7b7b",
+                "constructionId": 18
+            },
+            {
+                "id": "162f2e24-bff5-4e20-9a53-cb355b50c859",
+                "url": "https://clamaco-images.s3.amazonaws.com/ffde205b-824f-4c77-bb57-6d81593e1a70",
+                "constructionId": 18
+            },
+            {
+                "id": "afabf444-5435-4e07-a8c7-1f2574cbdbca",
+                "url": "https://clamaco-images.s3.amazonaws.com/8fc630d1-cf2d-473e-95bb-2e3cd5dcce6f",
+                "constructionId": 18
+            },
+            {
+                "id": "2ae5ea4a-8ea9-4181-8be4-d1237858f0ad",
+                "url": "https://clamaco-images.s3.amazonaws.com/361af7b4-b468-4ad5-b855-f2b998cd8ff7",
+                "constructionId": 18
+            }
+        ]
+    }
+]

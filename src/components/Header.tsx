@@ -39,7 +39,7 @@ const Header = () => {
               key={link.to}
               to={link.to}
               className={`relative group transition-all duration-200 ${
-                location.pathname === link.to ? 'text-blue-600' : 'text-gray-700'
+                location.pathname === link.to ? 'text-primary' : 'text-gray-700'
               }`}
             >
               {link.label}
