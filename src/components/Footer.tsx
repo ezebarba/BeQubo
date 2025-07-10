@@ -11,10 +11,10 @@ const Footer = () => {
             Viviendas de calidad. Tu próximo hogar te espera.
           </p>
           <div className="flex gap-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+          {/*<a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
               <FaFacebookF size={20} />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
+            </a>*/}
+            <a href="https://www.instagram.com/bequbo.ar/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
               <FaInstagram size={20} />
             </a>
             <a href="https://wa.me/5491123456789" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">
@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <h3 className="text-xl font-semibold mb-2">Dónde estamos</h3>
           <p className="text-sm text-gray-400 mb-3">
-            <strong>BeQubo</strong> - Av. San Martín 1955, Caseros, Buenos Aires
+          <a href="https://maps.app.goo.gl/STxzhm3RoX2uSyG4A"><strong>BeQubo</strong> - Av. San Martín 1955, Caseros, Buenos Aires </a>
           </p>
           <iframe
             title="Ubicación de BeQubo"

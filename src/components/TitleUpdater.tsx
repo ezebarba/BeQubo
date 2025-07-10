@@ -8,7 +8,7 @@ const TitleUpdater = () => {
   useEffect(() => {
     const routeTitles: Record<string, string> = {
       '/': 'BeQubo',
-      '/obras': 'BeQubo - Obras',
+      '/proyectos': 'BeQubo - Proyectos',
       '/nosotros': 'BeQubo - Nosotros',
       '/contacto': 'BeQubo - Contacto',
       '/trabaja-con-nosotros': 'BeQubo - Trabaja con Nosotros',

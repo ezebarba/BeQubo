@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Obras from './pages/Obras';
+import Proyectos from './pages/Proyectos';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
 import TrabajaConNosotros from './pages/TrabajaConNosotros';
@@ -25,10 +25,10 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/obras"
+          path="/proyectos"
           element={
             <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants}>
-              <Obras />
+              <Proyectos />
             </motion.div>
           }
         />
