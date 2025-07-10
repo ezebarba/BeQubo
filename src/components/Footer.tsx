@@ -11,9 +11,6 @@ const Footer = () => {
             Viviendas de calidad. Tu próximo hogar te espera.
           </p>
           <div className="flex gap-4">
-          {/*<a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
-              <FaFacebookF size={20} />
-            </a>*/}
             <a href="https://www.instagram.com/bequbo.ar/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
               <FaInstagram size={20} />
             </a>
