@@ -18,7 +18,7 @@ const Home = () => {
       <AnimatedSection delay={0.4}>
         <div className="flex justify-center">
           <img
-            src="/src/images/home.png"
+            src="images/home.png"
             alt="BeQubo"
             className="w-full max-w-md rounded-2xl shadow-lg object-cover"
           />

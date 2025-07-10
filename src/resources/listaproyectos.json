@@ -9,17 +9,17 @@
         "images": [
             {
                 "id": "b5b09e40-ab7b-4240-a94c-b1c75ba85573",
-                "url": "/src/images/proyectos/santa maria de oro/Oro - Fachada frente.png",
+                "url": "images/proyectos/santa maria de oro/Oro - Fachada frente.png",
                 "constructionId": 1
             },            
             {
                 "id": "b5b09e40-ab7b-4240-a94c-b1c75ba85574",
-                "url": "/src/images/proyectos/santa maria de oro/Oro - Comedor A.png",
+                "url": "images/proyectos/santa maria de oro/Oro - Comedor A.png",
                 "constructionId": 1
             },
             {
                 "id": "d2956c09-8e44-4c21-85fe-532f6ed66043",
-                "url": "/src/images/proyectos/santa maria de oro/Oro - Living comedor F.png",
+                "url": "images/proyectos/santa maria de oro/Oro - Living comedor F.png",
                 "constructionId": 1
             }
         ]
@@ -34,52 +34,52 @@
         "images": [
             {
                 "id": "bfaea409-4e9b-4373-ba62-242766ba5d88",
-                "url": "/src/images/proyectos/perdiguero/perdiguero-0.png",
+                "url": "images/proyectos/perdiguero/perdiguero-0.png",
                 "constructionId": 2
             },
             {
                 "id": "334e766a-82a5-4b33-872d-f23686bc47f1",
-                "url": "/src/images/proyectos/perdiguero/perdiguero-1.png",
+                "url": "images/proyectos/perdiguero/perdiguero-1.png",
                 "constructionId": 2
             },
             {
                 "id": "0e90f76a-4706-43c5-949c-fa8dda0f29d1",
-                "url": "/src/images/proyectos/perdiguero/perdiguero-2.png",
+                "url": "images/proyectos/perdiguero/perdiguero-2.png",
                 "constructionId": 2
             },
             {
                 "id": "df5c10e9-5f66-4f41-a4fb-6ea38f2e5f8e",
-                "url": "/src/images/proyectos/perdiguero/perdiguero-3.png",
+                "url": "images/proyectos/perdiguero/perdiguero-3.png",
                 "constructionId": 2
             },
             {
                 "id": "61fb4a52-4acf-451c-a898-479f18888147",
-                "url": "/src/images/proyectos/perdiguero/perdiguero-4.png",
+                "url": "images/proyectos/perdiguero/perdiguero-4.png",
                 "constructionId": 2
             },
             {
                 "id": "de996655-882e-4e4d-b8b3-bd525e31f039",
-                "url": "/src/images/proyectos/perdiguero/perdiguero-5.png",
+                "url": "images/proyectos/perdiguero/perdiguero-5.png",
                 "constructionId": 2
             },
             {
                 "id": "de996655-882e-4e4d-b8b3-bd525e31f038",
-                "url": "/src/images/proyectos/perdiguero/perdiguero-6.png",
+                "url": "images/proyectos/perdiguero/perdiguero-6.png",
                 "constructionId": 2
             },
             {
                 "id": "de996655-882e-4e4d-b8b3-bd525e31f037",
-                "url": "/src/images/proyectos/perdiguero/perdiguero-7.png",
+                "url": "images/proyectos/perdiguero/perdiguero-7.png",
                 "constructionId": 2
             }  , 
             {
                 "id": "de996655-882e-4e4d-b8b3-bd525e31f036",
-                "url": "/src/images/proyectos/perdiguero/perdiguero-8.png",
+                "url": "images/proyectos/perdiguero/perdiguero-8.png",
                 "constructionId": 2
             }  ,
             {
                 "id": "de996655-882e-4e4d-b8b3-bd525e31f035",
-                "url": "/src/images/proyectos/perdiguero/perdiguero-9.png",
+                "url": "images/proyectos/perdiguero/perdiguero-9.png",
                 "constructionId": 2
             }                                           
         ]
@@ -94,7 +94,7 @@
         "images": [
             {
                 "id": "a2e3d52f-11a6-47b9-9a65-028437272b46",
-                "url": "/src/images/proyectos/caseros/Caseros - Fachada.png",
+                "url": "images/proyectos/caseros/Caseros - Fachada.png",
                 "constructionId": 3 
             }
         ]
@@ -109,7 +109,7 @@
         "images": [
             {
                 "id": "a2e3d52f-11a6-47b9-9a65-028437272b41",
-                "url": "/src/images/proyectos/donado/Donado - Fachada.png",
+                "url": "images/proyectos/donado/Donado - Fachada.png",
                 "constructionId": 4
             }
         ]

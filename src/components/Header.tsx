@@ -2,7 +2,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../images/logo.png';
 
 
 const Header = () => {
@@ -28,7 +27,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/">
         
-        <img src={logo} alt="BeQubo" className="h-12 w-auto" />
+        <img src="images/logo.png" alt="BeQubo" className="h-12 w-auto" />
         
         </Link>
 

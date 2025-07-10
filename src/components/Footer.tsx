@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Logo y redes */}
         <div className="flex flex-col items-center md:items-start">
-          <img src="/src/images/logo.png" alt="BeQubo Logo" className="w-32 h-auto mb-4" />
+          <img src="images/logo.png" alt="BeQubo Logo" className="w-32 h-auto mb-4" />
           <p className="text-gray-400 text-sm mb-4 text-center md:text-left">
             Viviendas de calidad. Tu próximo hogar te espera.
           </p>
