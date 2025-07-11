@@ -23,11 +23,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <header className="bg-lila shadow-md sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/">
         
-        <img src="images/logo.png" alt="BeQubo" className="h-12 w-auto" />
+        <img src="images/logocompleto.png" alt="BeQubo" className="h-18 w-auto" />
         
         </Link>
 
@@ -38,11 +38,11 @@ const Header = () => {
               key={link.to}
               to={link.to}
               className={`relative group transition-all duration-200 ${
-                location.pathname === link.to ? 'text-primary' : 'text-gray-700'
+                location.pathname === link.to ? 'text-primary' : 'text-verde'
               }`}
             >
               {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-crudo transition-all duration-300 group-hover:w-full"></span>
             </Link>
 
           ))}
@@ -61,7 +61,7 @@ const Header = () => {
             initial={{ height: 0 }}
             animate={{ height: 'auto' }}
             exit={{ height: 0 }}
-            className="md:hidden bg-white shadow-inner overflow-hidden"
+            className="md:hidden bg-black shadow-inner overflow-hidden"
           >
             <div className="flex flex-col px-6 py-4 space-y-4 text-gray-700 text-lg font-medium">
               {navLinks.map((link) => (

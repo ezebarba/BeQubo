@@ -2,12 +2,12 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10 px-6">
+    <footer className="bg-lila text-crudo py-10 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Logo y redes */}
         <div className="flex flex-col items-center md:items-start">
-          <img src="images/logo.png" alt="BeQubo Logo" className="w-32 h-auto mb-4" />
-          <p className="text-gray-400 text-sm mb-4 text-center md:text-left">
+          <img src="images/logochico.png" alt="BeQubo Logo" className="w-32 h-auto mb-4" />
+          <p className="text-crudo text-sm mb-4 text-center md:text-left">
             Viviendas de calidad. Tu próximo hogar te espera.
           </p>
           <div className="flex gap-4">
@@ -23,14 +23,14 @@ const Footer = () => {
         {/* Contacto */}
         <div className="text-center md:text-left">
           <h3 className="text-xl font-semibold mb-2">Contacto</h3>
-          <p className="text-gray-400 text-sm">Email: info@bequbo.com.ar</p>
-          <p className="text-gray-400 text-sm">Tel: +54 11 2345 6789</p>
+          <p className="text-crudo text-sm">Email: info@bequbo.com.ar</p>
+          <p className="text-crudo text-sm">Tel: +54 11 2345 6789</p>
         </div>
 
         {/* Ubicación */}
         <div className="text-center md:text-left">
           <h3 className="text-xl font-semibold mb-2">Dónde estamos</h3>
-          <p className="text-sm text-gray-400 mb-3">
+          <p className="text-sm text-crudo mb-3">
           <a href="https://maps.app.goo.gl/STxzhm3RoX2uSyG4A"><strong>BeQubo</strong> - Av. San Martín 1955, Caseros, Buenos Aires </a>
           </p>
           <iframe
@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
 
       {/* Línea inferior */}
-      <div className="mt-10 text-center text-gray-500 text-sm border-t border-gray-800 pt-4">
+      <div className="mt-10 text-center text-crudo text-sm border-t border-verde pt-4">
         © {new Date().getFullYear()} BeQubo. Todos los derechos reservados.
       </div>
     </footer>

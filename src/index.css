@@ -1,9 +1,22 @@
 @import 'tailwindcss';
 
 @theme  {
-  /*--color-primary: #0F1C0B;*/
-  --color-primary: #0b2112;
-  --color-secondary: #c4b6d9;
-  --default-font-family: 'Rounded Elegance', sans-serif;
-  --secondary-font-family: 'calibri', sans-serif;
+  --color-primary: #192818;
+  --color-secondary: #9e96aa;
+  --font-primary: 'Rounded Elegance', sans-serif;
+  --fontsecondary: 'Calibri', sans-serif;
+  --color-lila: #9e96aa;
+  --color-verde: #192818;
+  --color-crudo: #f2f2f2;
+}
+
+@font-face {
+  font-family: 'Rounded Elegance';
+  src: url('/fonts/RoundedElegance.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply bg-[#f2f2f2];
 }

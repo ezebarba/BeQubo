@@ -51,7 +51,11 @@ const Obras: React.FC = () => {
         {obras.map((obra) => (
           <div key={obra.id} className="bg-white shadow rounded-lg overflow-hidden">
             <div className="relative group h-60 overflow-hidden">
-              <div className="absolute inset-0 flex transition-transform duration-300 group-hover:translate-x-[-100%]">
+            <div
+              className={`absolute inset-0 flex transition-transform duration-300 ${
+                obra.images.length > 1 ? 'group-hover:translate-x-[-100%]' : ''
+              }`}
+            >
                 {obra.images.map((image, index) => (
                   <img
                     key={image.id}
