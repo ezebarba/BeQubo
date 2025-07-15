@@ -14,7 +14,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/bequbo.ar/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
               <FaInstagram size={20} />
             </a>
-            <a href="https://wa.me/5491123456789" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">
+            <a href="https://wa.me/5491173600610" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">
               <FaWhatsapp size={20} />
             </a>
           </div>
@@ -24,17 +24,17 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <h3 className="text-xl font-semibold mb-2">Contacto</h3>
           <p className="text-crudo text-sm">Email: info@bequbo.com.ar</p>
-          <p className="text-crudo text-sm">Tel: +54 11 2345 6789</p>
+          <a href="https://wa.me/5491173600610" target="_blank" rel="noopener noreferrer" className="text-crudo text-sm"> Tel: +541173600610 </a>
         </div>
 
         {/* Ubicación */}
         <div className="text-center md:text-left">
           <h3 className="text-xl font-semibold mb-2">Dónde estamos</h3>
           <p className="text-sm text-crudo mb-3">
-          <a href="https://maps.app.goo.gl/STxzhm3RoX2uSyG4A"><strong>BeQubo</strong> - Av. San Martín 1955, Caseros, Buenos Aires </a>
+          <a href="https://maps.app.goo.gl/STxzhm3RoX2uSyG4A"><strong>Bequbo</strong> - Av. San Martín 1955, Caseros, Buenos Aires </a>
           </p>
           <iframe
-            title="Ubicación de BeQubo"
+            title="Ubicación de Bequbo"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.157214655884!2d-58.56573662427245!3d-34.65241197294544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8a8ab9936a9%3A0xe6b25993a8b0f542!2sAv.%20San%20Mart%C3%ADn%201955%2C%20B1678DLK%20Caseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1712611128844!5m2!1ses!2sar"
             width="100%"
             height="200"

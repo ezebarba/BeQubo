@@ -11,7 +11,7 @@ const Home = () => {
 
       <AnimatedSection delay={0.2}>
         <p className="text-primary text-lg max-w-2xl mx-auto mb-8">
-          Con BeQubo tu próximo hogar te espera
+          Con Bequbo tu próximo hogar te espera
         </p>
       </AnimatedSection>
 

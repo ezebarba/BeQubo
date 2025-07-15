@@ -7,14 +7,14 @@ const TitleUpdater = () => {
 
   useEffect(() => {
     const routeTitles: Record<string, string> = {
-      '/': 'BeQubo',
-      '/proyectos': 'BeQubo - Proyectos',
-      '/nosotros': 'BeQubo - Nosotros',
-      '/contacto': 'BeQubo - Contacto',
-      '/trabaja-con-nosotros': 'BeQubo - Trabaja con Nosotros',
+      '/': 'Bequbo',
+      '/proyectos': 'Bequbo - Proyectos',
+      '/nosotros': 'Bequbo - Nosotros',
+      '/contacto': 'Bequbo - Contacto',
+      '/trabaja-con-nosotros': 'Bequbo - Trabaja con Nosotros',
     };
 
-    document.title = routeTitles[location.pathname] || 'BeQubo';
+    document.title = routeTitles[location.pathname] || 'Bequbo';
   }, [location.pathname]);
 
   return null; // No renderiza nada en pantalla

@@ -27,7 +27,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/">
         
-        <img src="images/logocompleto.png" alt="BeQubo" className="h-18 w-auto" />
+        <img src="images/logocompleto.png" alt="Bequbo" className="h-18 w-auto" />
         
         </Link>
 
