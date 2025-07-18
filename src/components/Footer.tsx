@@ -48,7 +48,7 @@ const Footer = () => {
 
       {/* Línea inferior */}
       <div className="mt-10 text-center text-crudo text-sm border-t border-verde pt-4">
-        © {new Date().getFullYear()} BeQubo. Todos los derechos reservados.
+        © {new Date().getFullYear()} Bequbo. Todos los derechos reservados.
       </div>
     </footer>
   );
