@@ -1,0 +1,94 @@
+[
+    {
+      "slug": "Fray Justo Sta. María de Oro 5420",
+      "nombre": "Fray Justo Sta. María de Oro 5420",
+      "direccion": "Fray Justo Sta. María de Oro 5420, B1682 Caseros, Provincia de Buenos Aires",
+      "imagenes": [
+        "/images/proyectos/santa maria de oro/Oro - Fachada frente.png",
+        "/images/proyectos/santa maria de oro/Oro - Comedor A.png",
+        "/images/proyectos/santa maria de oro/Oro - Living comedor F.png"
+      ],
+      "caracteristicas": [
+        {
+          "icono": "/icons/light.svg",
+          "descripcion": "Ambientes Luminosos"
+        },
+        {
+          "icono": "/icons/ascensor.svg",
+          "descripcion": "Ascensores automáticos"
+        },
+        {
+          "icono": "/icons/local.svg",
+          "descripcion": "Local Comercial"
+        }
+      ],
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4011967469696!2d-58.5722168!3d-34.59401520000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8349af828cf%3A0x25b3b68515c8c8d4!2sFray%20Justo%20Sta.%20Mar%C3%ADa%20de%20Oro%205420%2C%20B1682%20Caseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1754266880387!5m2!1ses-419!2sar"
+    },
+    {
+      "slug": "Julio Perdiguero 1878",
+      "nombre": "Julio Perdiguero 1878",
+      "direccion": "Julio Perdiguero 1878, B1678FNP Caseros, Provincia de Buenos Aires",
+      "imagenes": [
+        "/images/proyectos/perdiguero/perdiguero-0.png",
+        "/images/proyectos/perdiguero/perdiguero-1.png",
+        "/images/proyectos/perdiguero/perdiguero-2.png",
+        "/images/proyectos/perdiguero/perdiguero-3.png",
+        "/images/proyectos/perdiguero/perdiguero-4.png",
+        "/images/proyectos/perdiguero/perdiguero-5.png",
+        "/images/proyectos/perdiguero/perdiguero-6.png",
+        "/images/proyectos/perdiguero/perdiguero-7.png",
+        "/images/proyectos/perdiguero/perdiguero-8.png",
+        "/images/proyectos/perdiguero/perdiguero-9.png"
+      ],
+      "caracteristicas": [
+        {
+          "icono": "/icons/oferta.svg",
+          "descripcion": "Expensas Mínimas"
+        },
+        {
+          "icono": "/icons/light.svg",
+          "descripcion": "Ambientes Luminosos"
+        }
+      ],
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1995079408566!2d-58.56093162353109!3d-34.59911625725644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8263c6fe721%3A0xd6fb3a642385fe41!2sJulio%20Perdiguero%201878%2C%20B1678FNP%20Caseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1754267112736!5m2!1ses-419!2sar"
+    },
+    {
+      "slug": "Caseros 2883",
+      "nombre": "Caseros 2883",
+      "direccion": "Caseros 2883, B1678HKG Caseros, Provincia de Buenos Aires",
+      "imagenes": [
+        "/images/proyectos/caseros/Caseros - Fachada.png"
+      ],
+      "caracteristicas": [
+        {
+          "icono": "/icons/light.svg",
+          "descripcion": "Ambientes Luminosos"
+        },
+        {
+          "icono": "/icons/ascensor.svg",
+          "descripcion": "Ascensores automáticos"
+        }
+      ],
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.827832004567!2d-58.57040862353086!3d-34.608514857752844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb83d1d64215d%3A0x7a1fdef07940a3ab!2sCaseros%202883%2C%20B1678HKG%20Caseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1754267816290!5m2!1ses-419!2sar"
+    },
+    {
+      "slug": "Donado 3286",
+      "nombre": "Donado 3286",
+      "direccion": "Av. Donado 3286, C1430 Villa Urquiza, Cdad. Autónoma de Buenos Aires",
+      "imagenes": [
+        "/images/proyectos/donado/Donado - Fachada.png"
+      ],
+      "caracteristicas": [
+        {
+          "icono": "/icons/light.svg",
+          "descripcion": "Ambientes Luminosos"
+        },
+        {
+          "icono": "/icons/ascensor.svg",
+          "descripcion": "Ascensores automáticos"
+        }
+      ],
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6477476817972!2d-58.48617172353258!3d-34.562473155322365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb68b7aeb3849%3A0x32076c51dbb8efe3!2sAv.%20Donado%203286%2C%20C1430%20Villa%20Urquiza%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1754267910704!5m2!1ses-419!2sar"
+    }
+  ]
+  

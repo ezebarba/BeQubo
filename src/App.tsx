@@ -3,12 +3,12 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Proyectos from './pages/Proyectos';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
 import TrabajaConNosotros from './pages/TrabajaConNosotros';
 import TitleUpdater from './components/TitleUpdater'; // 👈
-
+import Proyectos from './pages/Proyectos';
+import ProyectoDetalle from './pages/ProyectoDetalle';
 // Componente que envuelve las rutas con animaciones
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -24,14 +24,8 @@ const AnimatedRoutes = () => {
             </motion.div>
           }
         />
-        <Route
-          path="/proyectos"
-          element={
-            <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants}>
-              <Proyectos />
-            </motion.div>
-          }
-        />
+        <Route path="/proyectos" element={<Proyectos />} />
+        <Route path="/proyecto/:slug" element={<ProyectoDetalle />} />
         <Route
           path="/nosotros"
           element={
