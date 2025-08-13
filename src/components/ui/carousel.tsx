@@ -1,11 +1,9 @@
 "use client";
 
 import * as React from "react";
-import useEmblaCarousel, {
-  type EmblaCarouselType,
-  type EmblaOptionsType,
-} from "embla-carousel-react";
-import { cn } from "@/lib/utils";
+import useEmblaCarousel from "embla-carousel-react";
+import type { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
+import { cn } from "../../lib/utils"; // ⬅️ RUTA RELATIVA (no alias @)
 
 type CarouselContextValue = {
   api: EmblaCarouselType | null;
@@ -14,12 +12,9 @@ type CarouselContextValue = {
 };
 
 const CarouselContext = React.createContext<CarouselContextValue | null>(null);
-
 export function useCarousel() {
   const ctx = React.useContext(CarouselContext);
-  if (!ctx) {
-    throw new Error("useCarousel must be used within <Carousel>");
-  }
+  if (!ctx) throw new Error("useCarousel must be used within <Carousel>");
   return ctx;
 }
 
@@ -45,18 +40,16 @@ export const Carousel = React.forwardRef<HTMLDivElement, CarouselProps>(
       api.on("reInit", onSelect);
       api.on("select", onSelect);
       return () => {
-        api.off("reInit", onSelect);
-        api.off("select", onSelect);
+        api?.off("reInit", onSelect);
+        api?.off("select", onSelect);
       };
     }, [api, onSelect]);
 
     return (
-      <CarouselContext.Provider value={{ api, canScrollPrev, canScrollNext }}>
-        <div
-          ref={ref}
-          className={cn("relative", className)}
-          {...props}
-        >
+      <CarouselContext.Provider
+        value={{ api: api ?? null, canScrollPrev, canScrollNext }} // ⬅️ normalizamos undefined -> null
+      >
+        <div ref={ref} className={cn("relative", className)} {...props}>
           {/* viewport */}
           <div ref={viewportRef} className="overflow-hidden">
             {children}
@@ -71,14 +64,7 @@ Carousel.displayName = "Carousel";
 type CarouselContentProps = React.HTMLAttributes<HTMLDivElement>;
 export const CarouselContent = React.forwardRef<HTMLDivElement, CarouselContentProps>(
   ({ className, ...props }, ref) => {
-    return (
-      // container
-      <div
-        ref={ref}
-        className={cn("flex -ml-0", className)}
-        {...props}
-      />
-    );
+    return <div ref={ref} className={cn("flex -ml-0", className)} {...props} />;
   }
 );
 CarouselContent.displayName = "CarouselContent";
@@ -89,11 +75,7 @@ export const CarouselItem = React.forwardRef<HTMLDivElement, CarouselItemProps>(
     return (
       <div
         ref={ref}
-        className={cn(
-          // slide
-          "min-w-0 shrink-0 grow-0 basis-full pl-0",
-          className
-        )}
+        className={cn("min-w-0 shrink-0 grow-0 basis-full pl-0", className)}
         {...props}
       />
     );
@@ -106,8 +88,7 @@ export const CarouselPrevious = React.forwardRef<HTMLButtonElement, ArrowButtonP
   ({ className, disabled, children, ...props }, ref) => {
     const { api, canScrollPrev } = useCarousel();
     const handleClick = React.useCallback(() => {
-      if (!api) return;
-      api.scrollPrev();
+      api?.scrollPrev();
     }, [api]);
 
     return (
@@ -138,8 +119,7 @@ export const CarouselNext = React.forwardRef<HTMLButtonElement, ArrowButtonProps
   ({ className, disabled, children, ...props }, ref) => {
     const { api, canScrollNext } = useCarousel();
     const handleClick = React.useCallback(() => {
-      if (!api) return;
-      api.scrollNext();
+      api?.scrollNext();
     }, [api]);
 
     return (

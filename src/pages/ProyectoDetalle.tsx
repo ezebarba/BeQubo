@@ -9,7 +9,8 @@ import {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
-} from "@/components/ui/carousel";
+} from "../components/ui/carousel";
+
 
 type Caracteristica = {
   icono: string;
