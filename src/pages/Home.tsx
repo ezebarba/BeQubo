@@ -1,31 +1,36 @@
-import AnimatedSection from '../components/AnimatedSection';
+import React from 'react'
+import Seo from '@/components/Seo'
+import AnimatedSection from '../components/AnimatedSection'
 
 const Home = () => {
   return (
-    <main className="text-center py-20 bg-crudo px-4 space-y-10">
-      <AnimatedSection>
-        <h1 className="text-4xl font-bold text-primary mb-4">
-          Desarrollando viviendas de calidad
-        </h1>
-      </AnimatedSection>
+    <main className="text-center bg-crudo">
+      <Seo
+        title="Inicio"
+        description="Conocé los proyectos y desarrollos de Bequbo."
+        canonical="https://www.bequbo.com.ar/"
+      />
 
-      <AnimatedSection delay={0.2}>
-        <p className="text-primary text-lg max-w-2xl mx-auto mb-8">
-          Con Bequbo tu próximo hogar te espera
-        </p>
-      </AnimatedSection>
-
-      <AnimatedSection delay={0.4}>
-        <div className="flex justify-center">
-          <img
-            src="images/home.png"
-            alt="BeQubo"
-            className="w-full max-w-md rounded-2xl shadow-lg object-cover"
-          />
-        </div>
-      </AnimatedSection>
+      {/* Hero con video (autoplay requiere muted y playsInline) */}
+      <section>
+        <video
+          src="/videos/videohome.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          style={{
+            width: '100%',
+            height: 'auto',
+            display: 'block',
+            maxHeight: '92vh',
+            objectFit: 'cover'
+          }}
+        />
+      </section>
     </main>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

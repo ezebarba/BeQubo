@@ -1,5 +1,14 @@
+import React from 'react'
+import Seo from '@/components/Seo'
+
 const TrabajaConNosotros = () => {
-    return (
+  return (
+    <main>
+      <Seo
+        title="Trabajá con Nosotros"
+        description="Sumate a Bequbo: dejanos tus datos y CV."
+        canonical="https://www.bequbo.com.ar/trabaja-con-nosotros"
+      />
       <section className="p-8 max-w-xl mx-auto">
         <h2 className="text-primary text-3xl font-semibold mb-6">Trabajá con Nosotros</h2>
         <p className="text-primary mb-4">
@@ -14,8 +23,8 @@ const TrabajaConNosotros = () => {
           </button>
         </form>
       </section>
-    );
-  };
-  
-  export default TrabajaConNosotros;
-  
+    </main>
+  )
+}
+
+export default TrabajaConNosotros

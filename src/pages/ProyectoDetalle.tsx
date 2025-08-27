@@ -1,93 +1,98 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { useParams, Link } from "react-router-dom";
-import proyectos from "../resources/proyectos.json";
-import { FaChevronLeft, FaChevronRight, FaChevronLeft as FaArrowBack } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io";
+import React, { useState, useEffect, useCallback } from 'react'
+import { useParams, Link } from 'react-router-dom'
+import Seo from '@/components/Seo'
+import proyectos from '../resources/proyectos.json'
+import { FaChevronLeft, FaChevronRight, FaChevronLeft as FaArrowBack } from 'react-icons/fa'
+import { IoMdClose } from 'react-icons/io'
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
-} from "../components/ui/carousel";
-
+} from '../components/ui/carousel'
 
 type Caracteristica = {
-  icono: string;
-  descripcion: string;
-};
+  icono: string
+  descripcion: string
+}
 
 type Proyecto = {
-  slug: string;
-  nombre: string;
-  direccion: string;
-  imagenes: string[];
-  caracteristicas: Caracteristica[];
-  mapEmbedUrl: string;
-};
+  slug: string
+  nombre: string
+  direccion: string
+  imagenes: string[]
+  caracteristicas: Caracteristica[]
+  mapEmbedUrl: string
+}
 
 const ProyectoDetalle: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const proyecto = (proyectos as Proyecto[]).find((p) => p.slug === slug);
+  const { slug } = useParams<{ slug: string }>()
+  const proyecto = (proyectos as Proyecto[]).find((p) => p.slug === slug)
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-  // Navegación dentro del modal
   const goToNext = useCallback(() => {
-    if (!proyecto) return;
-    setCurrentIndex((prev) => (prev + 1) % proyecto.imagenes.length);
-  }, [proyecto]);
+    if (!proyecto) return
+    setCurrentIndex((prev) => (prev + 1) % proyecto.imagenes.length)
+  }, [proyecto])
 
   const goToPrev = useCallback(() => {
-    if (!proyecto) return;
-    setCurrentIndex((prev) =>
-      prev === 0 ? proyecto.imagenes.length - 1 : prev - 1
-    );
-  }, [proyecto]);
+    if (!proyecto) return
+    setCurrentIndex((prev) => (prev === 0 ? proyecto.imagenes.length - 1 : prev - 1))
+  }, [proyecto])
 
   // Teclado en modal
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (!isModalOpen) return;
-      if (e.key === "ArrowRight") goToNext();
-      if (e.key === "ArrowLeft") goToPrev();
-      if (e.key === "Escape") setIsModalOpen(false);
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isModalOpen, goToNext, goToPrev]);
+      if (!isModalOpen) return
+      if (e.key === 'ArrowRight') goToNext()
+      if (e.key === 'ArrowLeft') goToPrev()
+      if (e.key === 'Escape') setIsModalOpen(false)
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [isModalOpen, goToNext, goToPrev])
 
   // Swipe en modal (touch)
   useEffect(() => {
-    if (!isModalOpen) return;
-    let startX = 0;
-    let endX = 0;
+    if (!isModalOpen) return
+    let startX = 0
+    let endX = 0
 
     const onTouchStart = (e: TouchEvent) => {
-      startX = e.changedTouches[0].clientX;
-    };
+      startX = e.changedTouches[0].clientX
+    }
     const onTouchEnd = (e: TouchEvent) => {
-      endX = e.changedTouches[0].clientX;
-      const diff = startX - endX;
-      if (diff > 50) goToNext();
-      if (diff < -50) goToPrev();
-    };
+      endX = e.changedTouches[0].clientX
+      const diff = startX - endX
+      if (diff > 50) goToNext()
+      if (diff < -50) goToPrev()
+    }
 
-    window.addEventListener("touchstart", onTouchStart);
-    window.addEventListener("touchend", onTouchEnd);
+    window.addEventListener('touchstart', onTouchStart)
+    window.addEventListener('touchend', onTouchEnd)
     return () => {
-      window.removeEventListener("touchstart", onTouchStart);
-      window.removeEventListener("touchend", onTouchEnd);
-    };
-  }, [isModalOpen, goToNext, goToPrev]);
+      window.removeEventListener('touchstart', onTouchStart)
+      window.removeEventListener('touchend', onTouchEnd)
+    }
+  }, [isModalOpen, goToNext, goToPrev])
 
   if (!proyecto) {
-    return <div className="p-8 text-center">Proyecto no encontrado.</div>;
+    return <div className="p-8 text-center">Proyecto no encontrado.</div>
   }
+
+  const ogImage = proyecto.imagenes?.[0]
 
   return (
     <div className="bg-[#f2f2f2] text-gray-800 min-h-screen">
+      <Seo
+        title={proyecto.nombre}
+        description={`${proyecto.nombre} – ${proyecto.direccion}`}
+        canonical={`https://www.bequbo.com.ar/proyecto/${proyecto.slug}`}
+        image={ogImage}
+      />
       <div className="container mx-auto px-4 py-8">
         <Link to="/proyectos" className="flex items-center text-primary mb-4">
           <FaArrowBack className="mr-2" /> Volver a Proyectos
@@ -108,10 +113,11 @@ const ProyectoDetalle: React.FC = () => {
                   alt={`${proyecto.nombre} imagen ${idx + 1}`}
                   className="w-full h-[800px] object-cover object-bottom cursor-pointer rounded-lg"
                   onClick={() => {
-                    setCurrentIndex(idx);
-                    setIsModalOpen(true);
+                    setCurrentIndex(idx)
+                    setIsModalOpen(true)
                   }}
                   loading="lazy"
+                  decoding="async"
                 />
               </CarouselItem>
             ))}
@@ -131,7 +137,7 @@ const ProyectoDetalle: React.FC = () => {
             {proyecto.caracteristicas.map((c, idx) => (
               <div key={idx} className="flex flex-col items-center text-center">
                 {c.icono && (
-                  <img src={c.icono} alt={c.descripcion} className="h-12 mb-2" />
+                  <img src={c.icono} alt={c.descripcion} className="h-12 mb-2" loading="lazy" decoding="async" />
                 )}
                 <p className="text-sm">{c.descripcion}</p>
               </div>
@@ -156,7 +162,7 @@ const ProyectoDetalle: React.FC = () => {
         )}
       </div>
 
-      {/* Modal con navegación, teclado, swipe y contador */}
+      {/* Modal con navegación, teclado, swipe y contador (conservado) */}
       {isModalOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
@@ -175,8 +181,8 @@ const ProyectoDetalle: React.FC = () => {
           {proyecto.imagenes.length > 1 && (
             <button
               onClick={(e) => {
-                e.stopPropagation();
-                goToPrev();
+                e.stopPropagation()
+                goToPrev()
               }}
               className="absolute left-4 text-white text-3xl p-2 bg-black/40 hover:bg-black/60 rounded-full"
               aria-label="Anterior"
@@ -195,8 +201,8 @@ const ProyectoDetalle: React.FC = () => {
           {proyecto.imagenes.length > 1 && (
             <button
               onClick={(e) => {
-                e.stopPropagation();
-                goToNext();
+                e.stopPropagation()
+                goToNext()
               }}
               className="absolute right-4 text-white text-3xl p-2 bg-black/40 hover:bg-black/60 rounded-full"
               aria-label="Siguiente"
@@ -211,7 +217,7 @@ const ProyectoDetalle: React.FC = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default ProyectoDetalle;
+export default ProyectoDetalle

@@ -1,17 +1,28 @@
+import React from 'react'
+import Seo from '@/components/Seo'
+
 const Contacto = () => {
   return (
     <>
-      {/* Sección de contacto */}
-      {/* Imagen con overlay de gradiente */}
+      <Seo
+        title="Contacto"
+        description="Escribinos: consultas comerciales, prensa o soporte. Bequbo."
+        canonical="https://www.bequbo.com.ar/contacto"
+      />
+
+      {/* Imagen de cabecera con overlay */}
       <div className="relative w-full h-[500px] md:h-[500px] overflow-hidden">
         <img
           src="/images/contacto.jpg"
           alt="Persona trabajando en laptop"
           className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
         />
-        {/* Gradiente superpuesto */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-transparent"></div>
-      </div>      
+      </div>
+
+      {/* Formulario */}
       <section className="p-8 max-w-2xl mx-auto">
         <h2 className="text-primary text-3xl font-semibold mb-6">Contacto</h2>
         <form className="space-y-4">
@@ -38,7 +49,7 @@ const Contacto = () => {
         </form>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Contacto;
+export default Contacto

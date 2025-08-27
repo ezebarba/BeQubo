@@ -1,0 +1,25 @@
+{
+    "headers": [
+      {
+        "source": "/assets/(.*)",
+        "headers": [
+          { "key": "Vercel-CDN-Cache-Control", "value": "max-age=31536000, immutable" },
+          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        ]
+      },
+      {
+        "source": "/(.*)\\.(css|js|mjs|woff2|png|jpg|jpeg|webp|avif|svg|gif|ico|mp4)",
+        "headers": [
+          { "key": "Vercel-CDN-Cache-Control", "value": "max-age=31536000, immutable" },
+          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        ]
+      },
+      {
+        "source": "/",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        ]
+      }
+    ]
+  }
+  

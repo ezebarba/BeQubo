@@ -1,23 +1,30 @@
-// src/components/TitleUpdater.tsx
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
+/**
+ * TitleUpdater: mantiene compatibilidad con la lógica anterior,
+ * pero NO pisa el <title> si detecta que Seo ya está gestionando metadata.
+ */
 const TitleUpdater = () => {
-  const location = useLocation();
+  const location = useLocation()
 
   useEffect(() => {
+    // Si Seo está gestionando metadata, no tocar el título
+    const seoManaged = document.head.querySelector('meta[name="x-seo-managed"]')
+    if (seoManaged) return
+
     const routeTitles: Record<string, string> = {
       '/': 'Bequbo',
       '/proyectos': 'Bequbo - Proyectos',
       '/nosotros': 'Bequbo - Nosotros',
       '/contacto': 'Bequbo - Contacto',
       '/trabaja-con-nosotros': 'Bequbo - Trabaja con Nosotros',
-    };
+    }
 
-    document.title = routeTitles[location.pathname] || 'Bequbo';
-  }, [location.pathname]);
+    document.title = routeTitles[location.pathname] || 'Bequbo'
+  }, [location.pathname])
 
-  return null; // No renderiza nada en pantalla
-};
+  return null
+}
 
-export default TitleUpdater;
+export default TitleUpdater
