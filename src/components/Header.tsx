@@ -22,7 +22,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="bg-lila shadow-md sticky top-0 z-50">
+    <header className="bg-lila shadow-md sticky top-0 z-50 font-primary text-xl">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" aria-label="Ir al inicio">
           <img
@@ -35,7 +35,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex space-x-6 text-lg">
+        <nav className="hidden md:flex space-x-6 text-xl">
           {navLinks.map((link) => {
             const active = location.pathname === link.to
             return (

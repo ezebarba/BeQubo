@@ -1,6 +1,0 @@
-import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
-export default function Seo({ title = 'Bequbo', description = 'Desarrollos y proyectos de Bequbo.', canonical, image = 'https://www.bequbo.com.ar/og.jpg' }) {
-    const fullTitle = title ? `${title} | Bequbo` : 'Bequbo';
-    const url = canonical ?? (typeof window !== 'undefined' ? window.location.href : 'https://www.bequbo.com.ar/');
-    return (_jsxs(_Fragment, { children: [_jsx("meta", { name: "x-seo-managed", content: "true" }), _jsx("title", { children: fullTitle }), _jsx("meta", { name: "description", content: description }), url && _jsx("link", { rel: "canonical", href: url }), _jsx("meta", { property: "og:title", content: fullTitle }), _jsx("meta", { property: "og:description", content: description }), _jsx("meta", { property: "og:type", content: "website" }), _jsx("meta", { property: "og:url", content: url }), _jsx("meta", { property: "og:image", content: image }), _jsx("meta", { name: "twitter:card", content: "summary_large_image" }), _jsx("meta", { name: "twitter:title", content: fullTitle }), _jsx("meta", { name: "twitter:description", content: description }), _jsx("meta", { name: "twitter:image", content: image })] }));
-}

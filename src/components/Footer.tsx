@@ -1,10 +1,10 @@
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaInstagram, FaWhatsapp, FaFacebookF } from 'react-icons/fa'
 
 const Footer = () => {
   return (
     <footer className="bg-lila text-crudo py-10 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-        {/* Logo y redes */}
+        {/* Columna 1: Logo y tagline */}
         <div className="flex flex-col items-center md:items-start">
           <img
             src="/images/logochico.png"
@@ -16,47 +16,81 @@ const Footer = () => {
           <p className="text-crudo text-sm mb-4 text-center md:text-left">
             Arquitectura que trasciende. Diseño&nbsp;que&nbsp;eleva.
           </p>
-          <div className="flex gap-4">
-            <a
-              href="https://www.instagram.com/bequbo.ar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram de Bequbo"
-              className="hover:text-pink-500"
-            >
-              <FaInstagram size={20} />
-            </a>
-            <a
-              href="https://wa.me/5491161638192"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp de Bequbo"
-              className="hover:text-green-400"
-            >
-              <FaWhatsapp size={20} />
-            </a>
-          </div>
         </div>
 
-        {/* Contacto */}
+        {/* Columna 2: Contacto + Redes */}
         <div className="text-center md:text-left">
-          <h3 className="text-xl font-semibold mb-2">Contacto</h3>
-          <p className="text-crudo text-sm">Email: info@bequbo.com.ar</p>
+          <h3 className="text-xl font-semibold mb-2 font-primary">Contacto</h3>
+
+          <p className="text-crudo text-sm">
+            Email:{' '}
+            <a
+              href="mailto:info@bequbo.com.ar"
+              className="text-crudo hover:underline underline-offset-4 decoration-1"
+              title="Enviar email a Bequbo"
+            >
+              info@bequbo.com.ar
+            </a>
+          </p>
+
           <a
             href="https://wa.me/5491161638192"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-crudo text-sm"
+            className="text-crudo text-sm hover:underline underline-offset-4 decoration-1 inline-block mt-1"
+            aria-label="Contactar por WhatsApp"
+            title="Contactar por WhatsApp"
           >
-            Tel: +54 11 6163-8192
+            Tel: (+54) 1161638192
           </a>
+
+          {/* Redes (debajo de Contacto) */}
+          <div className="mt-6">
+            <h3 className="text-xl font-semibold mb-2 font-primary">Seguinos en nuestras redes</h3>
+            <div className="flex items-center gap-4 justify-center md:justify-start">
+              <a
+                href="https://www.instagram.com/bequbo.desarrolladora/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram de Bequbo"
+                className="hover:text-pink-500"
+                title="Instagram"
+              >
+                <FaInstagram size={20} />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61579208437607"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook de Bequbo"
+                className="hover:text-[#1877F2]"
+                title="Facebook"
+              >
+                <FaFacebookF size={20} />
+              </a>
+              <a
+                href="https://wa.me/5491161638192"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp de Bequbo"
+                className="hover:text-green-400"
+                title="WhatsApp"
+              >
+                <FaWhatsapp size={20} />
+              </a>
+            </div>
+          </div>
         </div>
 
-        {/* Ubicación */}
+        {/* Columna 3: Ubicación */}
         <div className="text-center md:text-left">
-          <h3 className="text-xl font-semibold mb-2">Dónde estamos</h3>
+          <h3 className="text-xl font-semibold mb-2 font-primary">Dónde estamos</h3>
           <p className="text-sm text-crudo mb-3">
-            <a href="https://maps.app.goo.gl/STxzhm3RoX2uSyG4A">
+            <a
+              href="https://maps.app.goo.gl/STxzhm3RoX2uSyG4A"
+              className="hover:underline underline-offset-4 decoration-1 font-primary"
+              title="Ver ubicación en Google Maps"
+            >
               <strong>Bequbo</strong> - Av. San Martín 1955, Caseros, Buenos Aires
             </a>
           </p>

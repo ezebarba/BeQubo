@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Evitar JS emitido por error
+src/**/*.js
+src/**/*.js.map
+.vercel

@@ -1,4 +1,5 @@
 import Seo from '@/components/Seo'
+import HeroVideoAdaptive from '@/components/HeroVideoAdaptive'
 
 export default function Home() {
   return (
@@ -8,33 +9,15 @@ export default function Home() {
         description="Conocé los proyectos y desarrollos de Bequbo."
         canonical="https://www.bequbo.com.ar/"
       />
-
-      {/* Hero con video (autoplay requiere muted y playsInline) */}
-      <section>
-        <video
-          src="/videos/videohome.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          style={{
-            width: '100%',
-            height: 'auto',
-            display: 'block',
-            maxHeight: '92vh',
-            objectFit: 'cover'
-          }}
-        />
-      </section>
-
-      {/* Contenido
-      <section className="container mx-auto px-4 py-10">
-        <h1 className="text-3xl font-semibold mb-4">Bequbo</h1>
-        <p className="text-lg opacity-80">
-          Desarrollos y obras con enfoque en calidad, diseño y transparencia.
-        </p>
-      </section> */}
+      <HeroVideoAdaptive
+        srcLandscape="/videos/videohome.mp4"
+        srcPortrait="/videos/videohome.mp4"
+        // opcionales: posters
+        // posterLandscape="/images/poster_landscape.jpg"
+        // posterPortrait="/images/poster_portrait.jpg"
+        heightVh={92}
+        portraitBelowPx={768} // si querés forzar portrait bajo 768px
+      />
     </main>
   )
 }

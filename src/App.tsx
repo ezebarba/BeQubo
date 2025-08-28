@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import TitleUpdater from './components/TitleUpdater'
+import WhatsAppFloatingButton from './components/WhatsAppFloatingButton'
 
 // Code-splitting de páginas
 const Home = lazy(() => import('./pages/Home'))
@@ -76,6 +77,7 @@ const App = () => {
       <TitleUpdater />
       <Header />
       <AnimatedRoutes />
+      <WhatsAppFloatingButton phone="5491161638192"/>
       <Footer />
     </Router>
   )

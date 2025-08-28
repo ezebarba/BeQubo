@@ -3,19 +3,14 @@
     "target": "ES2020",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "NodeNext",
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "types": ["vite/client"],
+    "types": ["vite/client", "node"],
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
-    /* Opcional: si querés que no falle por variables no usadas, podés desactivar:
-    "noUnusedLocals": false,
-    "noUnusedParameters": false
-    */
+    "paths": { "@/*": ["src/*"] },
+    "noEmit": true
   },
-  "include": ["src"]
+  "include": ["src", "api"]
 }
