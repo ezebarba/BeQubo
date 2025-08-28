@@ -1,5 +1,3 @@
-import React from 'react'
-
 type SeoProps = {
   title?: string
   description?: string
@@ -16,8 +14,6 @@ export default function Seo({
   const fullTitle = title ? `${title} | Bequbo` : 'Bequbo'
   const url = canonical ?? (typeof window !== 'undefined' ? window.location.href : 'https://www.bequbo.com.ar/')
 
-  // React 19 hoistea estos elementos al <head>
-  // Agregamos un meta marcador para que TitleUpdater no sobrescriba el título
   return (
     <>
       <meta name="x-seo-managed" content="true" />

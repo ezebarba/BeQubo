@@ -1,0 +1,6 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import Seo from '@/components/Seo';
+const TrabajaConNosotros = () => {
+    return (_jsxs("main", { children: [_jsx(Seo, { title: "Trabaj\u00E1 con Nosotros", description: "Sumate a Bequbo: dejanos tus datos y CV.", canonical: "https://www.bequbo.com.ar/trabaja-con-nosotros" }), _jsxs("section", { className: "p-8 max-w-xl mx-auto", children: [_jsx("h2", { className: "text-primary text-3xl font-semibold mb-6", children: "Trabaj\u00E1 con Nosotros" }), _jsx("p", { className: "text-primary mb-4", children: "\u00BFQuer\u00E9s formar parte de nuestro equipo? Complet\u00E1 el siguiente formulario y contanos sobre vos." }), _jsxs("form", { className: "space-y-4", children: [_jsx("input", { type: "text", placeholder: "Nombre completo", className: "w-full p-3 border border-gray-300 rounded" }), _jsx("input", { type: "email", placeholder: "Email", className: "w-full p-3 border border-gray-300 rounded" }), _jsx("input", { type: "file", className: "w-full p-2 border border-gray-300 rounded" }), _jsx("button", { type: "submit", className: "bg-verde text-crudo px-6 py-2 rounded hover:bg-lila transition", children: "Enviar CV" })] })] })] }));
+};
+export default TrabajaConNosotros;

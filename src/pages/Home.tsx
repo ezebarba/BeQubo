@@ -1,10 +1,8 @@
-import React from 'react'
 import Seo from '@/components/Seo'
-import AnimatedSection from '../components/AnimatedSection'
 
-const Home = () => {
+export default function Home() {
   return (
-    <main className="text-center bg-crudo">
+    <main>
       <Seo
         title="Inicio"
         description="Conocé los proyectos y desarrollos de Bequbo."
@@ -19,7 +17,7 @@ const Home = () => {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           style={{
             width: '100%',
             height: 'auto',
@@ -29,8 +27,14 @@ const Home = () => {
           }}
         />
       </section>
+
+      {/* Contenido
+      <section className="container mx-auto px-4 py-10">
+        <h1 className="text-3xl font-semibold mb-4">Bequbo</h1>
+        <p className="text-lg opacity-80">
+          Desarrollos y obras con enfoque en calidad, diseño y transparencia.
+        </p>
+      </section> */}
     </main>
   )
 }
-
-export default Home

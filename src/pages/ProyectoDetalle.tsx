@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import Seo from '@/components/Seo'
 import proyectos from '../resources/proyectos.json'
@@ -26,7 +26,7 @@ type Proyecto = {
   mapEmbedUrl: string
 }
 
-const ProyectoDetalle: React.FC = () => {
+export default function ProyectoDetalle() {
   const { slug } = useParams<{ slug: string }>()
   const proyecto = (proyectos as Proyecto[]).find((p) => p.slug === slug)
 
@@ -43,7 +43,6 @@ const ProyectoDetalle: React.FC = () => {
     setCurrentIndex((prev) => (prev === 0 ? proyecto.imagenes.length - 1 : prev - 1))
   }, [proyecto])
 
-  // Teclado en modal
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!isModalOpen) return
@@ -55,7 +54,6 @@ const ProyectoDetalle: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [isModalOpen, goToNext, goToPrev])
 
-  // Swipe en modal (touch)
   useEffect(() => {
     if (!isModalOpen) return
     let startX = 0
@@ -103,7 +101,6 @@ const ProyectoDetalle: React.FC = () => {
         </h1>
         <p className="text-gray-600 mb-8">{proyecto.direccion}</p>
 
-        {/* Carrusel (shadcn/Embla) */}
         <Carousel className="relative mb-8">
           <CarouselContent>
             {proyecto.imagenes.map((src, idx) => (
@@ -131,7 +128,6 @@ const ProyectoDetalle: React.FC = () => {
           )}
         </Carousel>
 
-        {/* Características */}
         {proyecto.caracteristicas?.length > 0 && (
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
             {proyecto.caracteristicas.map((c, idx) => (
@@ -145,7 +141,6 @@ const ProyectoDetalle: React.FC = () => {
           </div>
         )}
 
-        {/* Mapa */}
         {proyecto.mapEmbedUrl && (
           <div className="mb-8">
             <iframe
@@ -162,7 +157,6 @@ const ProyectoDetalle: React.FC = () => {
         )}
       </div>
 
-      {/* Modal con navegación, teclado, swipe y contador (conservado) */}
       {isModalOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
@@ -219,5 +213,3 @@ const ProyectoDetalle: React.FC = () => {
     </div>
   )
 }
-
-export default ProyectoDetalle

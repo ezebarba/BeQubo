@@ -1,13 +1,13 @@
-import React, { lazy, Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 
-// Layout y utilidades existentes
+// Layout y utilitarios
 import Header from './components/Header'
 import Footer from './components/Footer'
 import TitleUpdater from './components/TitleUpdater'
 
-// ✅ Code-splitting de páginas
+// Code-splitting de páginas
 const Home = lazy(() => import('./pages/Home'))
 const Nosotros = lazy(() => import('./pages/Nosotros'))
 const Contacto = lazy(() => import('./pages/Contacto'))
@@ -15,20 +15,19 @@ const Contacto = lazy(() => import('./pages/Contacto'))
 const Proyectos = lazy(() => import('./pages/Proyectos'))
 const ProyectoDetalle = lazy(() => import('./pages/ProyectoDetalle'))
 
-// Variantes para las animaciones de las páginas
+// Variantes para animaciones
 const pageVariants = {
   initial: { opacity: 0, y: -100 },
   animate: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: 100 },
 }
 
-// Componente que envuelve las rutas con animaciones
+// Rutas animadas
 const AnimatedRoutes = () => {
   const location = useLocation()
 
   return (
     <AnimatePresence mode="wait">
-      {/* Suspense para soportar lazy loading sin romper las animaciones */}
       <Suspense fallback={<div className="p-8 animate-pulse">Cargando…</div>}>
         <Routes location={location} key={location.pathname}>
           <Route
@@ -74,7 +73,6 @@ const AnimatedRoutes = () => {
 const App = () => {
   return (
     <Router>
-      {/* Actualiza el título dinámicamente */}
       <TitleUpdater />
       <Header />
       <AnimatedRoutes />

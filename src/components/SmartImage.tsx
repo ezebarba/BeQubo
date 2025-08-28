@@ -1,5 +1,3 @@
-import React from 'react'
-
 type SmartImageProps = {
   // import de imagetools con ?w=...&format=...&as=picture
   source: any

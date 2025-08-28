@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '@/components/Seo'
 import proyectos from '../resources/proyectos.json'
@@ -10,7 +10,7 @@ interface Proyecto {
   imagenes: string[]
 }
 
-const Proyectos: React.FC = () => {
+const Proyectos = () => {
   const [lista, setLista] = useState<Proyecto[]>([])
 
   useEffect(() => {
