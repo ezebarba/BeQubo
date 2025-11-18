@@ -1,5 +1,5 @@
 import { FaInstagram, FaWhatsapp, FaFacebookF } from 'react-icons/fa'
-
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer className="bg-lila text-crudo py-10 px-6">
@@ -110,12 +110,12 @@ const Footer = () => {
       {/* Línea inferior */}
       <div className="mt-10 text-center text-crudo text-sm border-t border-verde pt-4">
         © {new Date().getFullYear()} Bequbo. Todos los derechos reservados.
-        <a
-        href="/politicas-de-privacidad"
+        <Link
+        to="/politicas-de-privacidad"
         className="block mt-2 text-verde hover:text-verde hover:underline transition"
         >
           Políticas de Privacidad
-        </a>
+        </Link>
       </div>
     </footer>
   )
