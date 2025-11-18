@@ -7,7 +7,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import TitleUpdater from './components/TitleUpdater'
 import WhatsAppFloatingButton from './components/WhatsAppFloatingButton'
-
+import PoliticasPrivacidad from "./pages/PoliticasPrivacidad";
 // Code-splitting de páginas
 const Home = lazy(() => import('./pages/Home'))
 const Nosotros = lazy(() => import('./pages/Nosotros'))
@@ -55,7 +55,9 @@ const AnimatedRoutes = () => {
               <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants}>
                 <Contacto />
               </motion.div>
-            }
+            }  
+          />
+          <Route path="/politicas-de-privacidad" element={<PoliticasPrivacidad />} 
           />
           {/* <Route
             path="/trabaja-con-nosotros"

@@ -110,6 +110,12 @@ const Footer = () => {
       {/* Línea inferior */}
       <div className="mt-10 text-center text-crudo text-sm border-t border-verde pt-4">
         © {new Date().getFullYear()} Bequbo. Todos los derechos reservados.
+        <a
+        href="/politicas-de-privacidad"
+        className="block mt-2 text-verde hover:text-verde hover:underline transition"
+        >
+          Políticas de Privacidad
+        </a>
       </div>
     </footer>
   )
