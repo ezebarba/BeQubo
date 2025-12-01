@@ -6,7 +6,7 @@ export default function Nosotros() {
     <main>
       <Seo
         title="Nosotros"
-        description="Bequbo: desarrolladora creativa, dinámica y cercana."
+        description="Bequbo desarrollos inmobiliarios."
         canonical="https://www.bequbo.com.ar/nosotros"
       />
 

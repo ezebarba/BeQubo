@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <Seo
         title="Inicio"
-        description="Conocé los proyectos y desarrollos de Bequbo."
+        description="Bequbo desarrolla proyectos arquitectónicos modernos y funcionales en Argentina. Conocé nuestros trabajos y contactanos."
         canonical="https://www.bequbo.com.ar/"
       />
 
